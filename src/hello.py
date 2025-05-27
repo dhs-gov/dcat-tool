@@ -65,8 +65,12 @@ def _validate_xlsx():
 
     with tempfile.NamedTemporaryFile( suffix='.xlsx', delete=False ) as tf:
         file.save( tf.name )
-        ret = dhs_ontology.validate_xlsx( validator, tf.name )
-    if ( ret.get('error','') ):
+        try:
+            ret = dhs_ontology.validate_xlsx(validator, tf.name)
+        except Exception as e:
+            logging.error("Validation error: %s", str(e), exc_info=True)
+            return json.dumps({"message": "An error occurred during validation."}), HTTP_BAD_REQUEST
+    if ret.get('error', ''):
         ret['response'] = HTTP_JSON_DECODE_ERROR
     if 'response' not in ret:
         ret['response'] = HTTP_OK
@@ -96,7 +100,8 @@ def _validate_json():
                 validator.add_row( o )
                 ret['messages'].append('OK')
             except dhs_ontology.ValidationFail as e:
-                ret['messages'].append('FAIL: '+str(e))
+                logging.exception("Validation failed for input: %s", o)
+                ret['messages'].append('FAIL: Validation failed')
                 ret['response'] = HTTP_BAD_REQUEST
     else:
         ret['messages'].append('A JSON list or object must be provided')
