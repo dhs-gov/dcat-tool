@@ -202,7 +202,7 @@
         "@type": "http://www.w3.org/2001/XMLSchema#integer",
         "@value": 73
     },
-    "https://usdhs.github.io/dcat-tool/#dataQualityAssessment": "This dataset has some gaps in crtical areas. Efforts are underway to remediate.",
+    "https://usdhs.github.io/dcat-tool/#dataQualityAssessment": "This dataset has some gaps in critical areas. Efforts are underway to remediate.",
     "http://resources.data.gov/resources/dcat-us/#dataQuality": {
         "@type": "http://www.w3.org/2001/XMLSchema#boolean",
         "@value": "false"

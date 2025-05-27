@@ -206,7 +206,7 @@ dhs:isCommercial
     rdfs:label "Is Commercial"@en ;
     rdfs:isDefinedBy <http://github.com/usdhs/dcat-tool/> ;
     rdfs:range rdfs:Literal ;
-    rdfs:comment "<p>True or False</p><p>The dataset is aquired from a private sector provider (may be purchased or acquired via agreement).</p>" ;
+    rdfs:comment "<p>True or False</p><p>The dataset is acquired from a private sector provider (may be purchased or acquired via agreement).</p>" ;
     .
 
 dhs:hasDataDictionary
@@ -475,10 +475,10 @@ dhs:ch-pcii
 
 dhs:ch-les
     a rdf:Property ;
-    rdfs:label "Characteristics - LES - Law Enforcement Sensative"@en ;
+    rdfs:label "Characteristics - LES - Law Enforcement Sensitive"@en ;
     rdfs:isDefinedBy <http://github.com/usdhs/dcat-tool/> ;
     rdfs:range xsd:boolean;
-    rdfs:comment "<p>True or False</p><p>The information in the resource contains information that is deemed Law Enforcement Sensative.</p>" ;
+    rdfs:comment "<p>True or False</p><p>The information in the resource contains information that is deemed Law Enforcement Sensitive.</p>" ;
     .
 
 dhs:ch-synthetic

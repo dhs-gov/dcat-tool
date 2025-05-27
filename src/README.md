@@ -15,7 +15,7 @@ This directory contains the python source code for:
    key difference being that a collections are validated to make sure
    that they do not contain duplicate unique identifiers. Currently
    validation is done with hard-coded python; it should be moved to
-   [SHACL (Shape Constraint Langauge)](https://www.w3.org/TR/shacl/)
+   [SHACL (Shape Constraint Language)](https://www.w3.org/TR/shacl/)
 
 4. A [Python Flask](https://flask.palletsprojects.com/en/2.0.x/) and
    [WSGI-based implementation](https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface)

@@ -224,7 +224,7 @@ def define_args(args):
         v.g2.serialize(destination=args.writeschema, format=fmt)
 
     """
-    This code is not working propertly.
+    This code is not working properly.
 
 Test:
 echo '{ "dcterms:identifier": "id102", "dcterms:title": "This is ID102", "dcterms:description": "This is the third dataset", "usg:accessLevel": "public", "dhs:dataCatalogRecordAccessLevel": "public", "dcterms:issued": "12/22/2023", "dhs:component": "MGMT" }' |  python dcat_tool.py --convertJSON

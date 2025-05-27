@@ -51,7 +51,7 @@ foaf:Image a rdfs:Class,
            vs:term_status "stable".
 foaf:LabelProperty a rdfs:Class,
                      owl:Class;
-                   rdfs:comment "A foaf:LabelProperty is any RDF property with texual values that serve as labels.";
+                   rdfs:comment "A foaf:LabelProperty is any RDF property with textual values that serve as labels.";
                    rdfs:isDefinedBy foaf:;
                    rdfs:label "Label Property";
                    vs:term_status "unstable".
