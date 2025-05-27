@@ -152,7 +152,7 @@ def _upload_file_or_json():
             obj = json.loads(text)
             flash('JSON is syntactically valid.')
         except json.decoder.JSONDecodeError as e:
-            flash('JSON is not syntatically valid.')
+            flash('JSON is not syntactically valid.')
             return redirect(request.url)
 
         (resp_json,code) = _validate_json()

@@ -51,7 +51,7 @@ for o, v in parsed.items():
                 #print('stuck here -- ' + str(v))
                 if not v.get("@value"):
                     if term == 'characteristics': 
-                        #print('this must be a characteritic! ' + term)
+                        #print('this must be a characteristic! ' + term)
                         for i,j in v.items():
                             if i == '@type':
                                 pass
