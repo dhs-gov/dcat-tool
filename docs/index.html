@@ -138,7 +138,7 @@ Please note, however, that there are several variations to the formatting that a
             <tr>
                <td class='label'>Identifier</td>
                <td class='attrname'>dcterms:identifier</td>
-               <td class='definition'><p>Similar to a serial number associated with your laptop, the identifier is a unique and specific combination of characters that identify the resource. The combination must start with the DHS component code, is limited to 128 characters, and be in the following format: code-xxx-x</p><p>Example:<ul class='no-bullets'><li>mgmt-test-2</li><li>fema-1234-D</li></ul></p></td>
+               <td class='definition'><p>Similar to a serial number associated with your laptop, the identifier is a unique and specific combination of characters that identify the resource. The combination must start with the DHS component code, is limited to 128 characters, and be in the following format: code-xxx-x. Cannot contain spaces or special characters including !$&'()*+,;= per W3 RFC3987 and dnf-iri-safe rules.</p><p>Example:<ul class='no-bullets'><li>mgmt-test-2</li><li>fema-1234-D</li></ul></p></td>
                <td class='namespace'><a href="http://purl.org/dc/terms/" target="_blank">http://purl.org/dc/terms/</a></td>
                <td class="required">Yes</td>
             </tr>
@@ -320,8 +320,17 @@ Please note, however, that there are several variations to the formatting that a
             <tr>
                <td class='label'>contact point</td>
                <td class='attrname'>dcat:contactPoint</td>
-               <td class='definition'><p>The contact information  (name and email preferred) of the main individual to contact with questions about the dataset.</p></td>
+               <td class='definition'><p>The contact information  (name and email preferred) of the individual to contact with questions about the dataset (for internal use only).</p></td>
                <td class='namespace'><a href="http://www.w3.org/TR/vocab-dcat/" target="_blank">http://www.w3.org/TR/vocab-dcat/</a></td>
+               <td class="required">No</td>
+            </tr>
+            
+            
+            <tr>
+               <td class='label'>contactPointPublic</td>
+               <td class='attrname'>dhs:contactPointPublic</td>
+               <td class='definition'><p>The contact information that is shared to the public via data.gov (name and email preferred) of the main individual or group for the public to contact with questions about the dataset.</p></td>
+               <td class='namespace'><a href="http://github.com/usdhs/dcat-tool/" target="_blank">http://github.com/usdhs/dcat-tool/</a></td>
                <td class="required">No</td>
             </tr>
             

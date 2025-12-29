@@ -38,6 +38,13 @@ dhs:dataCatalogRecordAccessLevel
     rdfs:comment "<p>The classification of this Data Inventory Record as either Public or Non-Public.</p><p>Can this record be published in data.gov?<ul class='no-bullets'><li>Yes = Public</li><li>No = Non-Public</li></ul></p>" ;
     .
 
+dhs:contactPointPublic
+    a rdfs:Property ;
+    rdfs:label "contactPointPublic"@en ;
+    rdfs:isDefinedBy <http://github.com/usdhs/dcat-tool/> ;
+    rdfs:comment "<p>The contact information that is shared to the public via data.gov (name and email preferred) of the main individual or group for the public to contact with questions about the dataset.</p>"@en ;
+    .
+
 dhs:public
     a rdfs:Property ;
     rdfs:label "public"@en ;

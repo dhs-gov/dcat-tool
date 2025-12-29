@@ -624,7 +624,7 @@ dcterms:description
     dcterms:issued "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
     dcterms:modified "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
     a rdf:Property ;
-    rdfs:comment "<p>A summary of the resource, limited to 4,000 characters.</p><p>Example:</p><p>A mission and overview of the Data Inventory Program (DIP) containing instructions, references, terminology, and explanations designed  for users to understand and be able to use the features it contains.</p>"@en ;
+    rdfs:comment "<p>A summary of the resource, limited to 4,000 characters. Cannot be an empty string and must be at least 28 characters.</p><p>Example:</p><p>A mission and overview of the Data Inventory Program (DIP) containing instructions, references, terminology, and explanations designed  for users to understand and be able to use the features it contains.</p>"@en ;
     rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
     rdfs:label "Description"@en ;
     rdfs:subPropertyOf <http://purl.org/dc/elements/1.1/description> .
@@ -702,7 +702,7 @@ dcterms:identifier
     dcterms:issued "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
     dcterms:modified "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
     a rdf:Property ;
-    rdfs:comment "<p>Similar to a serial number associated with your laptop, the identifier is a unique and specific combination of characters that identify the resource. The combination must start with the DHS component code, is limited to 128 characters, and be in the following format: code-xxx-x</p><p>Example:<ul class='no-bullets'><li>mgmt-test-2</li><li>fema-1234-D</li></ul></p>"@en ;
+    rdfs:comment "<p>Similar to a serial number associated with your laptop, the identifier is a unique and specific combination of characters that identify the resource. The combination must start with the DHS component code, is limited to 128 characters, and be in the following format: code-xxx-x. </p><p>Example:<ul class='no-bullets'><li>mgmt-test-2</li><li>fema-1234-D</li></ul></p>"@en ;
     rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
     rdfs:label "Identifier"@en ;
     rdfs:range rdfs:Literal ;
@@ -1006,7 +1006,7 @@ dcterms:title
     dcterms:issued "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
     dcterms:modified "2010-10-11"^^<http://www.w3.org/2001/XMLSchema#date> ;
     a rdf:Property ;
-    rdfs:comment "<p>The official name (title) given to the resource, limited to 255 characters. Acronyms should be used sparingly and only when explained in the description.</p><p>Example:<ul class='no-bullets'><li>DHS Data Inventory Introduction</li></ul></p>"@en ;
+    rdfs:comment "<p>The official name (title) given to the resource, limited to 255 characters and must have at lease 10 characters. Acronyms should be used sparingly and only when explained in the description.</p><p>Example:<ul class='no-bullets'><li>DHS Data Inventory Introduction</li></ul></p>"@en ;
     rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
     rdfs:label "Title"@en ;
     rdfs:range rdfs:Literal ;

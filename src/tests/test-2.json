@@ -58,6 +58,10 @@
             "@id": "http://www.w3.org/ns/dcat#contactPoint",
             "@type": "http://www.w3.org/2006/vcard/ns#Individual"
         },
+        "contactPointPublic": {
+            "@id": "https://usdhs.github.io/dcat-tool/#contactPointPublic",
+            "@type": "http://www.w3.org/2006/vcard/ns#Individual"
+        },
         "ch-person-level": {
             "@id": "https://usdhs.github.io/dcat-tool/#ch-person-level",
             "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -150,7 +154,7 @@
     "http://purl.org/dc/terms/description": "test all fields for DIP record - a full record",
     "http://purl.org/dc/terms/issued": {
         "@type": "xsd:date",
-        "@value": "2023-09-25"
+        "@value": "2024-05-03"
     },
     "http://resources.data.gov/resources/dcat-us/#accessLevel": "public",
     "https://usdhs.github.io/dcat-tool/#dataCatalogRecordAccessLevel": "public",
@@ -178,18 +182,18 @@
     },
     "https://usdhs.github.io/dcat-tool/#owner": {
         "@type": "http://www.w3.org/2006/vcard/ns#Individual",
-        "http://www.w3.org/2006/vcard/ns#organization-name": "CACI",
-        "http://www.w3.org/2006/vcard/ns#fn": "Mike Smythe"
+        "http://www.w3.org/2006/vcard/ns#organization-name": "PWC",
+        "http://www.w3.org/2006/vcard/ns#fn": "Bill Bradly"
     },
     "https://usdhs.github.io/dcat-tool/#steward": {
         "@type": "http://www.w3.org/2006/vcard/ns#Individual",
-        "http://www.w3.org/2006/vcard/ns#organization-name": "Kinsley",
-        "http://www.w3.org/2006/vcard/ns#fn": "Anna Cole"
+        "http://www.w3.org/2006/vcard/ns#organization-name": "PWC",
+        "http://www.w3.org/2006/vcard/ns#fn": "Kim Palsi"
     },
     "https://usdhs.github.io/dcat-tool/#custodian": {
         "@type": "http://www.w3.org/2006/vcard/ns#Individual",
-        "http://www.w3.org/2006/vcard/ns#organization-name": "Booz Allen",
-        "http://www.w3.org/2006/vcard/ns#fn": "Mike Smythe"
+        "http://www.w3.org/2006/vcard/ns#organization-name": "CACI",
+        "http://www.w3.org/2006/vcard/ns#fn": "John Jay"
     },
     "http://resources.data.gov/resources/dcat-us/#primaryITInvestmentUII": "010-999992220",
     "https://usdhs.github.io/dcat-tool/#fismaID": "FSA-00100-MAJ-00100",
@@ -197,8 +201,13 @@
     "https://usdhs.github.io/dcat-tool/#sharingAgreements": "https://example.org/some/valuable/resource.html",
     "http://www.w3.org/ns/dcat#contactPoint": {
         "@type": "http://www.w3.org/2006/vcard/ns#Individual",
-        "http://www.w3.org/2006/vcard/ns#organization-name": "PWC",
-        "http://www.w3.org/2006/vcard/ns#fn": "Kim Palsi"
+        "http://www.w3.org/2006/vcard/ns#organization-name": "CACI",
+        "http://www.w3.org/2006/vcard/ns#fn": "Anna Cole"
+    },
+    "https://usdhs.github.io/dcat-tool/#contactPointPublic": {
+        "@type": "http://www.w3.org/2006/vcard/ns#Individual",
+        "http://www.w3.org/2006/vcard/ns#organization-name": "CACI",
+        "http://www.w3.org/2006/vcard/ns#fn": "Gerry McDonald"
     },
     "https://usdhs.github.io/dcat-tool/#collectionAuthority": [
         "Some Article of legal authority",
@@ -215,13 +224,13 @@
     "http://resources.data.gov/resources/dcat-us/#systemOfRecords": "https://example.org/a_SORN_entry.html",
     "https://usdhs.github.io/dcat-tool/#ptaAdjudicatedDate": {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-09-25"
+        "@value": "2024-05-03"
     },
     "http://purl.org/dc/terms/conformsTo": "http://niem.github.io/reference/iepd/",
     "https://usdhs.github.io/dcat-tool/#conformsFIPS": "https://www.nist.gov/publications/security-requirements-cryptographic-modules-includes-change-notices-1232002",
     "https://usdhs.github.io/dcat-tool/#conformsNIEMPercent": {
         "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 75
+        "@value": 59
     },
     "https://usdhs.github.io/dcat-tool/#conformsUnicode": {
         "@type": "http://www.w3.org/2001/XMLSchema#boolean",
@@ -229,7 +238,7 @@
     },
     "https://usdhs.github.io/dcat-tool/#identitiesNativeScript": {
         "@type": "http://www.w3.org/2001/XMLSchema#boolean",
-        "@value": "true"
+        "@value": "false"
     },
     "https://usdhs.github.io/dcat-tool/#transliterationStandard": "https://www.iso.org/ics/01.140.10/x/",
     "https://usdhs.github.io/dcat-tool/#sourceDatasets": [
@@ -255,7 +264,7 @@
     },
     "https://usdhs.github.io/dcat-tool/#hasDataDictionary": {
         "@type": "http://www.w3.org/2001/XMLSchema#boolean",
-        "@value": "true"
+        "@value": "false"
     },
     "http://purl.org/dc/terms/accrualPeriodicity": {
         "@type": "http://www.w3.org/2001/XMLSchema#duration",
@@ -267,11 +276,11 @@
     "http://www.w3.org/ns/dcat#temporalResolution": "P1M",
     "https://usdhs.github.io/dcat-tool/#dataQualityKnown": {
         "@type": "http://www.w3.org/2001/XMLSchema#boolean",
-        "@value": "true"
+        "@value": "false"
     },
     "https://usdhs.github.io/dcat-tool/#dataQualityPercent": {
         "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 72
+        "@value": 82
     },
     "https://usdhs.github.io/dcat-tool/#dataQualityAssessment": "This dataset has some gaps in crtical areas. Efforts are underway to remediate.",
     "http://resources.data.gov/resources/dcat-us/#dataQuality": {
@@ -289,7 +298,7 @@
     },
     "http://resources.data.gov/resources/dcat-us/#modified": {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-09-25"
+        "@value": "2024-05-03"
     },
     "https://usdhs.github.io/dcat-tool/#vendor": [
         "ECS",
@@ -306,20 +315,20 @@
     "http://www.w3.org/ns/dcat#mediaType": "application/node",
     "https://usdhs.github.io/dcat-tool/#isStream": {
         "@type": "http://www.w3.org/2001/XMLSchema#boolean",
-        "@value": "true"
+        "@value": "false"
     },
-    "https://usdhs.github.io/dcat-tool/#accessInstructions": "the history of",
+    "https://usdhs.github.io/dcat-tool/#accessInstructions": "Daum provided a",
     "https://usdhs.github.io/dcat-tool/#tableCount": {
         "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 36
+        "@value": 96
     },
     "https://usdhs.github.io/dcat-tool/#recordCount": {
         "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 57
+        "@value": 29
     },
     "http://www.w3.org/ns/dcat#byteSize": {
         "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 55
+        "@value": 29
     },
     "https://usdhs.github.io/dcat-tool/#datasetClassification": "CUI",
     "https://usdhs.github.io/dcat-tool/#hostingLocation": "CIRRUS",
@@ -329,11 +338,11 @@
     },
     "https://usdhs.github.io/dcat-tool/#easilyAccessibleByCreatingComponent": {
         "@type": "http://www.w3.org/2001/XMLSchema#boolean",
-        "@value": "false"
+        "@value": "true"
     },
     "https://usdhs.github.io/dcat-tool/#easilyAccessibleByAllComponents": {
         "@type": "http://www.w3.org/2001/XMLSchema#boolean",
-        "@value": "false"
+        "@value": "true"
     },
     "https://usdhs.github.io/dcat-tool/#easilyAccessibleByGeneralPublic": {
         "@type": "http://www.w3.org/2001/XMLSchema#boolean",
@@ -342,7 +351,7 @@
     "http://resources.data.gov/resources/dcat-us/#encryptionAlgorithm": "3DES",
     "https://usdhs.github.io/dcat-tool/#recordTransmission": {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-09-25"
+        "@value": "2024-05-03"
     },
     "https://usdhs.github.io/dcat-tool/#validityTime": {
         "@type": "http://www.w3.org/2001/XMLSchema#duration",

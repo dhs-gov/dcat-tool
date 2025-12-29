@@ -61,7 +61,7 @@ for o, v in parsed.items():
                                 #print(i)
                                 pvalue = j
                                 ws.cell(row=2, column=colNo).value = pvalue
-                    elif term in ['publisher','creator','governance','owner','steward','custodian','contactPoint']: 
+                    elif term in ['publisher','creator','governance','owner','steward','custodian','contactPoint','contactPointPublic']: 
                         #print('What is this? ' + term)
                         for i,j in v.items():
                             if i == '@type':

@@ -183,7 +183,7 @@ def addTestNodes(nodeName, jsonobj, testValue = None):
                             jsonobj.update({nodekey["uri"]:"3DES"})
                     #pass
                 else:
-                    if rw in ['owner','steward','custodian','contactPoint','publisher','creator','governance']:
+                    if rw in ['owner','steward','custodian','contactPoint','publisher','creator','governance','contactPointPublic']:
                         # -- first add the def to the context --
                         dataTypekey = "http://www.w3.org/2006/vcard/ns#Individual"
                         vcardIdObj = {}

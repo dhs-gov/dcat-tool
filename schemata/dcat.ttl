@@ -709,7 +709,7 @@ dcat:contactPoint
   a owl:ObjectProperty ;
   rdfs:comment "Información relevante de contacto para el recurso catalogado. Se recomienda el uso de vCard."@es ;
   rdfs:comment "Informazioni di contatto rilevanti per la risorsa catalogata. Si raccomanda l'uso di vCard."@it ;
-  rdfs:comment "<p>The contact information  (name and email preferred) of the main individual to contact with questions about the dataset.</p>"@en ;
+  rdfs:comment "<p>The contact information  (name and email preferred) of the individual to contact with questions about the dataset (for internal use only).</p>"@en ;
   rdfs:comment "Relevantní kontaktní informace pro katalogizovaný zdroj. Doporučuje se použít slovník VCard."@cs ;
   rdfs:comment "Relie un jeu de données à une information de contact utile en utilisant VCard."@fr ;
   rdfs:comment "Συνδέει ένα σύνολο δεδομένων με ένα σχετικό σημείο επικοινωνίας, μέσω VCard."@el ;

@@ -11,13 +11,12 @@ from rdflib import Graph, URIRef
 SCHEMATA_DIR  = os.path.join(dirname(abspath( __file__ )) , "../../schemata")
 COLLECT_TTL   = os.path.join(SCHEMATA_DIR, "dhs_collect.ttl")
 
-sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+# -- this should add the parent folder to the path
+#sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
 # TEST_DIR = dirname(abspath(__file__))
-
+sys.path.insert(1, '..')
 import dcat_tool
-import easy_workbook
-import dhs_ontology
 
 # setup the test files
 TESTFILE_1 = os.path.join(os.path.dirname(__file__), 'test-1.json')
