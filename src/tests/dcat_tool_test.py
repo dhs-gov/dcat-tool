@@ -19,7 +19,7 @@ import easy_workbook
 import dhs_ontology
 
 def test_collect():
-    DHS = rdflib.Namespace("https://github.com/dhs-gov/0.1")
+    DHS = rdflib.Namespace("https://github.com/dhs-gov/dcat-tool/0.1")
     g = rdflib.Graph()
     g.parse( dhs_ontology.COLLECT_TTL )
 
