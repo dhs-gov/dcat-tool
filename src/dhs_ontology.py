@@ -23,7 +23,7 @@ from datetime import datetime
 import template_reader
 import easy_workbook
 
-DHS           = Namespace("http://github.com/usdhs/dcat-tool/0.1")
+DHS           = Namespace("http://github.com/dhs-gov/dcat-tool/0.1")
 XSD           = Namespace("http://www.w3.org/2001/XMLSchema#")
 RDFS          = Namespace("http://www.w3.org/2000/01/rdf-schema#")
 
