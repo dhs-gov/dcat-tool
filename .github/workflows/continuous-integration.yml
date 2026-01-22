@@ -47,7 +47,7 @@ jobs:
         run: make template
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: DIP_Template
           retention-days: 30
