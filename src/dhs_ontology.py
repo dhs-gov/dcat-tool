@@ -322,7 +322,7 @@ class Validator:
         USG = Namespace('http://resources.data.gov/resources/dcat-us/#')
         DCTERMS = Namespace('http://purl.org/dc/terms/')
         DCAT = Namespace('http://www.w3.org/ns/dcat#')
-        DHS = Namespace('https://usdhs.github.io/dcat-tool/#')
+        DHS = Namespace('https://github.com/dhs-gov/dcat-tool/#')
 
         # -- create an empty graph --
         dipr = Graph()
