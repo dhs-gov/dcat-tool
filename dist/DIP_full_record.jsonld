@@ -78,7 +78,7 @@
   "dhs:vendor": "ECS",
   "dcterms:license": "MIT",
   "dcterms:accessRights":"PIV card",
-  "dcat:theme":"Enterprise Data Mangement",
+  "dcat:theme":"Enterprise Data Management",
   "dhs:functionalDataDomain":"MGMT",
   "dcat:mediaType":"application/json",
   "dhs:tableCount":36,

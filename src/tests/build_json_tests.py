@@ -11,7 +11,7 @@ import random
 # Functions to generate test files for python unittest (Class)
 # =======================================
 # -- update the testSuiteDict (below) to add new test cases (each item builds a new test file and outputs to the tests dir)
-# -- the validation_tests.py file needs the tests to be added to check eahc output file
+# -- the validation_tests.py file needs the tests to be added to check each output file
 
 # setup the schema file
 SCHEMATA_DIR  = os.path.join(dirname(abspath( __file__ )) , "../../schemata")
@@ -241,7 +241,7 @@ def addTestNodes(nodeName, jsonobj, testValue = None):
                         elif rw in ['temporalResolution']:
                             jsonobj.update({nodekey["uri"]:'P1M'})
                         elif rw in ['dataQualityAssessment']:
-                            jsonobj.update({nodekey["uri"]:'This dataset has some gaps in crtical areas. Efforts are underway to remediate.'})
+                            jsonobj.update({nodekey["uri"]:'This dataset has some gaps in critical areas. Efforts are underway to remediate.'})
                         elif rw in ['format']:
                             jsonobj.update({nodekey["uri"]:'CSV'})
                         elif rw in ['vendor']:

@@ -194,13 +194,13 @@ class ExcelGenerator:
             ws.add_data_validation(int100_dv)
 
             #-- text/string (less than 100) --
-            # -- not used at this time - using custom rule for Unique Identifer - below --
+            # -- not used at this time - using custom rule for Unique Identifier - below --
             text_100_dv = DataValidation(type="textLength", operator="lessThanOrEqual", formula1=100)
             text_100_dv.error ='This value must be string with fewer than 100 chars'
             text_100_dv.errorTitle = 'Invalid Entry'
             ws.add_data_validation(text_100_dv)
 
-            # custom rule for Unique Identifer - no spaces and not longer than 128 --
+            # custom rule for Unique Identifier - no spaces and not longer than 128 --
             ui_128_dv = DataValidation(type="custom", formula1="AND(LEN(A2)<129,NOT(ISNUMBER(SEARCH(\" \",A2))))")
             ui_128_dv.error ='This value must be string with no spaces and a max of 128 chars'
             ui_128_dv.errorTitle = 'Invalid Entry'
@@ -261,7 +261,7 @@ class ExcelGenerator:
                 # Set the types with data validation where possible
                 if obj.typ=='xsd:boolean':
                     dv_boolean.add(f'{column_letter}2:{column_letter}{rows}')
-                    # -- the true/false works better when the column is formated as text --
+                    # -- the true/false works better when the column is formatted as text --
                     for row in range(2,rows):  # skip the header
                         cell = ws.cell(row=row, column=col)  # column 1 is "B"
                         cell.number_format = numbers.FORMAT_TEXT
