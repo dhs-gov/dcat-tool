@@ -78,9 +78,9 @@ class TemplateReader:
 
     def inventory_records(self):
         """Return all of the inventory records in the workbook."""
-        props = None
         ret = []
         for ws in self.inventory_worksheets():
+            props = None
             # Get the properties, then each row that has data
             for row in ws.rows:
                 # Get the props if we don't have it yet
